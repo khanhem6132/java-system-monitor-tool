@@ -1,3 +1,4 @@
+ HEAD
 # Java System Diagnostic & Monitoring Tool
 
 A command-line system monitoring and diagnostic tool built in **Java**.
@@ -95,3 +96,7 @@ This tool can help:
 Tran Gia Khanh
 Information Technology Student
 UEF – University of Economics and Finance
+=======
+# java-system-monitor-tool
+Java CLI System Diagnostic &amp; Monitoring Tool
+ fd6639bc6bafa3f949ae7cce2467ff854fff2942
