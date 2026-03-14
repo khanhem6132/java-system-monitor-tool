@@ -1,51 +1,48 @@
- HEAD
 # Java System Diagnostic & Monitoring Tool
 
-A command-line system monitoring and diagnostic tool built in **Java**.
+A lightweight **Command Line Interface (CLI) system monitoring and diagnostic tool built with Java**.
 
-This tool helps **IT support engineers and developers** analyze system performance, monitor resource usage, and generate diagnostic reports.
+This tool helps **developers, IT support engineers, and system administrators** monitor system performance, analyze resource usage, and generate diagnostic reports directly from the terminal.
+
+The project demonstrates how Java can interact with the **Operating System, CPU, RAM, disk, and running processes** to provide useful system insights.
 
 ---
 
 # Features
 
-### System Information
+## System Information
+
+Displays basic system information such as:
 
 * CPU usage
-* RAM status
-* OS information
-* Java version
-* Computer name
-
-### Monitoring
-
-* Real-time system monitoring
-* CPU usage chart
-* RAM usage chart
-* Disk usage monitoring
-
-### Diagnostics
-
-* AI-style system health analysis
-* Full system health check
-
-### Reporting
-
-* Export system information to file
-* Generate diagnostic reports
+* RAM usage and memory status
+* Operating system name and version
+* Java runtime version
+* Computer hostname
 
 ---
 
-# Example Output
+## System Monitoring
 
-## CPU & RAM Usage Chart
+Provides real-time monitoring of important system resources:
+
+* CPU usage chart
+* RAM usage chart
+* Disk usage monitoring
+* Continuous real-time system monitoring
+
+Example visualization:
 
 CPU | ███████████ 52%
 RAM | █████████████ 63%
 
 ---
 
-## Real-Time Monitoring
+## Real-Time Monitoring Mode
+
+Displays live system statistics continuously.
+
+Example output:
 
 REAL-TIME SYSTEM MONITOR
 
@@ -55,39 +52,115 @@ DISK | ███████ 32%
 
 ---
 
+## Diagnostics
+
+Performs automatic system diagnostics:
+
+* AI-style system health analysis
+* Full system health check
+* Resource usage evaluation
+
+Helps identify potential system performance issues.
+
+---
+
+## Reporting
+
+The tool can generate reports for later analysis:
+
+* Export system information to file
+* Generate diagnostic reports
+* Save system logs
+
+Example output file:
+
+system_log.txt
+
+---
+
 # Project Structure
 
 ```
 system-monitor-tool
+│
+├── SystemMonitor.java
+├── SystemDashboard.java
+├── SystemInfo.java
+├── DiskInfo.java
+├── NetworkInfo.java
+├── NetworkSpeedMonitor.java
+├── RealTimeMonitor.java
+├── ProcessMonitor.java
+├── SystemReportGenerator.java
+├── LoggerUtil.java
+│
+├── system_log.txt
+├── LICENSE
+└── README.md
+```
 
-SystemMonitor.java
-SystemInfo.java
-DiskInfo.java
-NetworkInfo.java
-RealTimeMonitor.java
-ProcessMonitor.java
-LoggerUtil.java
+---
+
+# Technologies Used
+
+This project uses the following technologies:
+
+* **Java**
+* **Java Management API**
+* **Command Line Interface (CLI)**
+* **System resource monitoring**
+* **File I/O for logging and reports**
+
+---
+
+# How to Run
+
+1. Clone the repository
+
+```
+git clone https://github.com/yourusername/java-system-monitor-tool.git
+```
+
+2. Navigate to the project folder
+
+```
+cd java-system-monitor-tool
+```
+
+3. Compile the project
+
+```
+javac *.java
+```
+
+4. Run the system monitor
+
+```
+java SystemMonitor
 ```
 
 ---
 
 # Use Cases
 
-This tool can help:
+This tool can be useful for:
 
-* IT Support Engineers
-* System Administrators
-* Developers diagnosing performance issues
+* IT Support Engineers diagnosing system problems
+* System Administrators monitoring resource usage
+* Developers analyzing performance issues
+* Students learning how system monitoring works in Java
 
 ---
 
-# Technologies Used
+# Future Improvements
 
-* Java
-* Java Management API
-* Command-line interface
-* File I/O
-* Process monitoring
+Possible improvements for the next versions:
+
+* Network traffic monitoring
+* Process usage visualization
+* Export reports to JSON / CSV
+* Interactive command-line menu
+* Cross-platform system metrics
 
 ---
 
@@ -95,8 +168,10 @@ This tool can help:
 
 Tran Gia Khanh
 Information Technology Student
-UEF – University of Economics and Finance
-=======
-# java-system-monitor-tool
-Java CLI System Diagnostic &amp; Monitoring Tool
- fd6639bc6bafa3f949ae7cce2467ff854fff2942
+University of Economics and Finance (UEF)
+
+---
+
+# License
+
+This project is licensed under the MIT License.
